@@ -1,0 +1,71 @@
+[
+  {
+    "source_name": "POS_CASH_balance",
+    "input_path": "gs://cred_bronze/POS_CASH_balance.parquet",
+    "output_path": "gs://cred_silver/POS_CASH_balance/",
+    "rename_columns": {},
+    "cast_columns": {
+      "SK_ID_CURR": "int",
+      "MONTHS_BALANCE": "int"
+    },
+    "drop_nulls": ["SK_ID_CURR"]
+  },
+  {
+    "source_name": "bureau",
+    "input_path": "gs://cred_bronze/bureau.parquet",
+    "output_path": "gs://cred_silver/bureau/",
+    "rename_columns": {},
+    "cast_columns": {
+      "SK_ID_CURR": "int",
+      "SK_ID_BUREAU": "int",
+      "AMT_CREDIT_SUM": "double"
+    },
+    "drop_nulls": ["SK_ID_CURR"]
+  },
+  {
+    "source_name": "bureau_balance",
+    "input_path": "gs://cred_bronze/bureau_balance.parquet",
+    "output_path": "gs://cred_silver/bureau_balance/",
+    "rename_columns": {},
+    "cast_columns": {
+      "SK_ID_BUREAU": "int",
+      "MONTHS_BALANCE": "int"
+    },
+    "drop_nulls": ["SK_ID_BUREAU"]
+  },
+  {
+    "source_name": "credit_card_balance",
+    "input_path": "gs://cred_bronze/credit_card_balance.parquet",
+    "output_path": "gs://cred_silver/credit_card_balance/",
+    "rename_columns": {},
+    "cast_columns": {
+      "SK_ID_CURR": "int",
+      "SK_ID_PREV": "int",
+      "MONTHS_BALANCE": "int"
+    },
+    "drop_nulls": ["SK_ID_CURR"]
+  },
+  {
+    "source_name": "installments_payments",
+    "input_path": "gs://cred_bronze/installments_payments.parquet",
+    "output_path": "gs://cred_silver/installments_payments/",
+    "rename_columns": {},
+    "cast_columns": {
+      "SK_ID_CURR": "int",
+      "SK_ID_PREV": "int"
+    },
+    "drop_nulls": ["SK_ID_CURR"]
+  },
+  {
+    "source_name": "previous_application",
+    "input_path": "gs://cred_bronze/previous_application.parquet",
+    "output_path": "gs://cred_silver/previous_application/",
+    "rename_columns": {},
+    "cast_columns": {
+      "SK_ID_CURR": "int",
+      "SK_ID_PREV": "int",
+      "AMT_CREDIT": "double"
+    },
+    "drop_nulls": ["SK_ID_CURR"]
+  }
+]
