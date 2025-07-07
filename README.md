@@ -98,8 +98,8 @@ This repository outlines a modern data engineering pipeline on **Google Cloud Pl
 
 All Spark job logic and paths are dynamically controlled via **config JSON files** stored in the `cred_config` GCS bucket. These include:
 
-- Input/output paths
-- Column transformation rules
+- raw_list.json : Contain all the source names of csv files along with input and output paths for lz_to_bronze.py script.
+- bronze_silver_logic.json: Contains all the Column transformation rules like rename column list, cast column list along with drop null column name.
 - Table definitions for BigQuery
 - Data validation parameters
 
