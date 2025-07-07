@@ -6,7 +6,6 @@ This repository outlines a modern data engineering pipeline on **Google Cloud Pl
 
 ## 📌 Architecture Overview
 
-![Credit Data Pipeline Architecture]
 ![image](https://github.com/user-attachments/assets/2a4aa98e-712c-41b9-be42-3867839faed6)
 
 ---
