@@ -1,0 +1,32 @@
+[
+  {
+    "source_name": "POS_CASH_balance",
+    "input_path": "gs://cred_raw1/POS_CASH_balance.csv",
+    "output_path": "gs://cred_bronze1/POS_CASH_balance.parquet"
+  },
+  {
+    "source_name": "bureau",
+    "input_path": "gs://cred_raw1/bureau.csv",
+    "output_path": "gs://cred_bronze1/bureau.parquet"
+  },
+  {
+    "source_name": "bureau_balance",
+    "input_path": "gs://cred_raw1/bureau_balance.csv",
+    "output_path": "gs://cred_bronze1/bureau_balance.parquet"
+  },
+  {
+    "source_name": "credit_card_balance",
+    "input_path": "gs://cred_raw1/credit_card_balance.csv",
+    "output_path": "gs://cred_bronze1/credit_card_balance.parquet"
+  },
+  {
+    "source_name": "installments_payments",
+    "input_path": "gs://cred_raw1/installments_payments.csv",
+    "output_path": "gs://cred_bronze1/installments_payments.parquet"
+  },
+  {
+    "source_name": "previous_application",
+    "input_path": "gs://cred_raw1/previous_application.csv",
+    "output_path": "gs://cred_bronze1/previous_application.parquet"
+  }
+]
