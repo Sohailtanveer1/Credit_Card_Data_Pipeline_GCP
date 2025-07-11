@@ -82,7 +82,7 @@ This repository outlines a modern data engineering pipeline on **Google Cloud Pl
 - DAGs handle:
   - Time-based scheduling.
   - Dependency resolution.
-  - Failure alerts & retries.
+  - Failure alerts & retries
 
 🎯 Objective: Fully automated, repeatable pipeline.
 
